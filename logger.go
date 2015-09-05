@@ -80,7 +80,7 @@ func (l *Logger) Debugf(f string, v ...interface{}) {
 }
 
 func (l *Logger) output(level int, v ...interface{}) {
-	if l.level <= level {
+	if l.level < level {
 		return
 	}
 	switch level {
@@ -100,7 +100,7 @@ func (l *Logger) output(level int, v ...interface{}) {
 }
 
 func (l *Logger) outputf(level int, f string, v ...interface{}) {
-	if l.level <= level {
+	if l.level < level {
 		return
 	}
 	switch level {
