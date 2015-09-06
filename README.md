@@ -11,7 +11,7 @@ Leveled logger (`llogger`) library allow you to add necessary logging everywhere
 ## Usage
 
 ```
-import "gopkg.in/jurka/llogger.v1.0"
+import "gopkg.in/jurka/llogger.v1"
 
 log := llogging.NewStdLogger(llogging.INFO, "")
 
